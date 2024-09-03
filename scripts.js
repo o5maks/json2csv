@@ -14,14 +14,14 @@ function convert(obj) {
 
     if (Array.isArray(obj)) {
         for (const item of obj) {
-            const row = keys.map((header) => (
-                item[header]
+            const row = keys.map((key) => (
+                item[key]
             ));
             lines.push(row);
         }
     } else {
-        const row = keys.map((header) => (
-            obj[header]
+        const row = keys.map((key) => (
+            obj[key]
         ));
         lines.push(row);
     }
